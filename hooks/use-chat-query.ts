@@ -10,7 +10,7 @@ interface ChatQueryProps {
     paramValue: string;
 }
 
-const useChatQuery = ({
+export const useChatQuery = ({
     queryKey,
     apiUrl,
     paramKey,
@@ -47,5 +47,3 @@ const useChatQuery = ({
 
     return { data, fetchNextPage, hasNextPage, isFetchingNextPage, status };
 };
-
-export default useChatQuery;
